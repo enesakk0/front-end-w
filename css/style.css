@@ -33,7 +33,7 @@ The designs were created to the following widths:
 
 body {
     width: 100vw;
-    background-color: var(off-white);
+    background-color: var(--off-white);
 }
 
 .header {
@@ -156,11 +156,88 @@ body {
     justify-content: space-between;
 }
 
+/* Hamburger Menu */
+#header-mobile-menu {
+    display: none;
+    background-color: var(--off-white);
+}
+
+#header-mobile-menu-list {
+    list-style-type: none;
+}
+
+.header-mobile-menu-list-a {
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+
 /* Media Query */
 .menu-icon {
     display: none;
 }
 
+.openbtn {
+    display: none;
+}
+
+.sidebar-blog-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0 auto;
+    gap:30px
+}
+
+.sidebar-blog-left {
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    gap:7px
+}
+
+.sidebar-blog-content-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sidebar-retro-img {
+    width: 105px;
+    height: 140px;
+}
+
+.sidebar-blog-content-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sidebar-blog-content-text {
+    font-size: 34px;
+    color: var(--grayish-blue);
+    font-weight: 700;
+}
+
+.sidebar-blog-content-subtitle-m {
+    font-size: 18px;
+    color: var(--very-dark-blue);
+    font-weight: 600;
+}
+
+.sidebar-blog-content-subtitle-s {
+    font-size: 15px;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.btn-soft-red:hover {
+    background-color: var(--very-dark-blue);
+    cursor: pointer;
+}
 
 @media screen and (max-width:680px) {
     .header-container-nav {
@@ -175,6 +252,11 @@ body {
     }
     .header {
         width: 90%;
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: var(--off-white);
+        padding-bottom: 20px;
     }
     .main-container {
         width: 90%;
@@ -196,5 +278,47 @@ body {
         margin-top: 15%;
         width: 100%;
     }
-    
+    .sidebar-blog-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        max-width: 90%;
+        gap: 0px;
+    }
+    .sidebar-blog-content-main {
+        margin-bottom: 20px;
+    }
+    .sidebar-blog-left {
+        flex-direction: column;
+        gap: 0px;
+        max-width: 90%;
+    }
+    #header-mobile-menu {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow-x: hidden;
+        width: 0px;
+        min-height: 100%;
+        z-index: 5;
+        top: 0;
+        left: -100px;
+        margin-left: 500px;
+        right: 0;
+        padding: 30px;
+        transition: 0.5s;
+    }
+    #header-mobile-menu-list {
+        padding-top: 50%;
+    }
+    #menu-icon-close {
+        display: block;
+        position: fixed;
+        right: 20px;
+    }
+    .openbtn {
+        display: block;
+    }
 }

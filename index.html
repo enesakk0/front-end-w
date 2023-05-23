@@ -9,7 +9,21 @@
 </head>
 <body>
         <header class="header">
-            <img src="assets/images/logo.svg" alt="">
+            <div id="header-mobile-menu">
+                <div id="menu-icon-close">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                        <img src="assets/images/icon-menu-close.svg" alt="">
+                    </a>
+                </div>
+                <ul id="header-mobile-menu-list">
+                    <li><a class="header-mobile-menu-list-a" href="">Home</a></li>
+                    <li><a class="header-mobile-menu-list-a" href="">New</a></li>
+                    <li><a class="header-mobile-menu-list-a" href="">Popular</a></li>
+                    <li><a class="header-mobile-menu-list-a" href="">Trending</a></li>
+                    <li><a class="header-mobile-menu-list-a" href="">Categories</a></li>
+                </ul>
+            </div>
+                <img src="assets/images/logo.svg" alt="">
             <ul class="header-container-nav">
                 <li><a class="header-link" href="#">Home</a></li>
                 <li><a class="header-link" href="#">New</a></li>
@@ -17,7 +31,9 @@
                 <li><a class="header-link" href="#">Trending</a></li>
                 <li><a class="header-link" href="#">Categories</a></li>
             </ul>
+            <a href="javascript:void(0)" class="openbtn" onclick="openNav()">
             <img class="menu-icon" src="assets/images/icon-menu.svg" alt="">
+            </a>
         </header>
     <main>
         <section class="main-container">
@@ -51,10 +67,35 @@
             </article>
         </section>
     </main>
-    <footer>
-        <section class="footer-container">
+    <section class="sidebar-blog-content">
+        <article class="sidebar-blog-left">
+            <article class="sidebar-blog-content-main">
+                <img class="sidebar-retro-img" src="assets/images/image-retro-pcs.jpg">
+                <div class="sidebar-blog-content-article">
+                    <div class="sidebar-blog-content-text">01</div>
+                    <div class="sidebar-blog-content-subtitle-m">Reviving Retro PCs</div>
+                    <div class="sidebar-blog-content-subtitle-s">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                </div>
+            </article>
+            <article class="sidebar-blog-content-main">
+                <img class="sidebar-retro-img" src="assets/images/image-top-laptops.jpg">
+                <div class="sidebar-blog-content-article">
+                    <div class="sidebar-blog-content-text">02</div>
+                    <div class="sidebar-blog-content-subtitle-m">Top 10 Laptops of 2022</div>
+                    <div class="sidebar-blog-content-subtitle-s">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                </div>
+            </article>
+        </article>
+        <article class="sidebar-blog-content-main">
+            <img class="sidebar-retro-img" src="assets/images/image-gaming-growth.jpg">
+            <div class="sidebar-blog-content-article">
+                <div class="sidebar-blog-content-text">03</div>
+                <div class="sidebar-blog-content-subtitle-m">Top 10 Laptops of 2022</div>
+                <div class="sidebar-blog-content-subtitle-s">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </div>
+        </article>
+    </section>
 
-        </section>
-    </footer>
+ <script src="js/index.js"></script>   
 </body>
 </html>

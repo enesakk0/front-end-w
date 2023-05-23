@@ -291,7 +291,7 @@ body {
     .sidebar-blog-left {
         flex-direction: column;
         gap: 0px;
-        max-width: 90%;
+        max-width: 100%;
     }
     #header-mobile-menu {
         display: none;

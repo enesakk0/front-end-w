@@ -282,7 +282,7 @@ body {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        max-width: 90%;
+        max-width: 100%;
         gap: 0px;
     }
     .sidebar-blog-content-main {

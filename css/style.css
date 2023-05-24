@@ -283,9 +283,8 @@ body {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        max-width: 90%;
-        align-items:center;
-        padding-left: 1.35rem
+        width: 90%;
+        align-items:flex-start;
     }
     .sidebar-blog-content-main {
         margin-bottom: 20px;

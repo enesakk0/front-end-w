@@ -240,6 +240,13 @@ body {
     cursor: pointer;
 }
 
+@media screen and (min-width:680px) {
+    #header-mobile-menu {
+        display: none;
+        }
+    }
+
+
 @media screen and (max-width:680px) {
     .header-container-nav {
         display: none;

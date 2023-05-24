@@ -159,7 +159,7 @@ body {
 
 /* Hamburger Menu */
 #header-mobile-menu {
-    display: none;
+    visibility:hidden;
     background-color: var(--off-white);
 }
 
@@ -295,7 +295,7 @@ body {
         max-width: 90%;
     }
     #header-mobile-menu {
-        display: none;
+        visibility: hidden;
         position: fixed;
         flex-direction: column;
         align-items: flex-start;
